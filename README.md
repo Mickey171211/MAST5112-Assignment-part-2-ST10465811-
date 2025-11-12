@@ -3,7 +3,7 @@
 
 Github Repository link:
 
-https://github.com/Mickey171211/MAST5112-Assignment-part-2-ST10465811-
+https://github.com/Mickey171211/MAST5112-Assignment-part-2-ST10465811-.git 
 
 # ChefMenuExpo (MAST5112 POE)
 
