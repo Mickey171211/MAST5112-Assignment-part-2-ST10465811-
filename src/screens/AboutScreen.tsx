@@ -1,18 +1,29 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
 export default function AboutScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>About this App</Text>
-      <Text style={styles.text}>This app was built to satisfy the assignment: allow a chef to add menu items, view a menu, and track the total number of items. Built with Expo + TypeScript.</Text>
-    </View>
+    <ScrollView style={styles.container}>
+      <Text style={styles.title}>About & Submission</Text>
+
+      <Text style={styles.sectionTitle}>Features</Text>
+      <Text style={styles.text}>• Add / Edit / Delete menu items (separate Add screen).</Text>
+      <Text style={styles.text}>• Filter menu by course (Starter / Main / Dessert).</Text>
+      <Text style={styles.text}>• Home screen shows complete menu and average price per course.</Text>
+
+      <Text style={styles.sectionTitle}>Submission Checklist</Text>
+      <Text style={styles.text}>1. README with changelog (included in repo)</Text>
+      <Text style={styles.text}>2. GitHub repo link</Text>
+      <Text style={styles.text}>3. Video demo with voice-over</Text>
+
+      <Text style={{ color: '#666', marginTop: 12 }}>This app stores data in memory (array) as required — no persistent storage used.</Text>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, backgroundColor: '#F8F9FA' },
-  title: { fontSize: 22, fontWeight: '700', marginBottom: 8 },
-  text: { color: '#666' },
+  container: { backgroundColor: '#F7F8FA', padding: 20 },
+  title: { fontSize: 22, fontWeight: '700', marginBottom: 10 },
+  sectionTitle: { fontWeight: '700', marginTop: 12 },
+  text: { color: '#333', marginTop: 6 },
 });
-
